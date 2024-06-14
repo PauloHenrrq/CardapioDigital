@@ -1,0 +1,29 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(imagens/bg.png);
+    /* Descomente par aplicar uma imagem sem repetição */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+header
+{
+    background-color: #1E1F22;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a
+{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
