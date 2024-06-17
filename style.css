@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Rowdies:wght@300;400;700&display=swap');
+
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
+}
+
+:root
+{
+    --corBotoesH2Texto: #FFAE00;
+    --arredondamentoBordas: 10px;
+    --fontDaProf: "Playwrite PL", cursive;
+    --minhaFonte: "Rowdies", sans-serif;
 }
 
 body
@@ -11,6 +23,7 @@ body
     /* Descomente par aplicar uma imagem sem repetição */
     /* background-repeat: no-repeat;
     background-size: cover; */
+    text-align: center;
 }
 
 header
@@ -20,10 +33,68 @@ header
     padding: 15px;
 }
 
+.logo
+{
+    width: 250px;
+}
+
 nav a
 {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: var(--minhaFonte);
+}
+
+h1
+{
+    text-transform: uppercase;
+}
+
+h2
+{
+    color: var(--corBotoesH2Texto);
+    text-align: center;
+}
+
+.imagemProduto
+{
+    width: 400px;
+}
+
+.boxProduto
+{
+    background-color: rgba(37, 37, 37, 0.8);
+    margin: auto;
+    width: 850px;
+    border-radius: var(--arredondamentoBordas);
+}
+
+.boxImg, .boxTexto
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.boxTexto
+{
+    width: 400px;
+    text-align: start;
+}
+
+h1, h2, h3 , button
+{
+    margin: 10px 0;
+}
+
+button
+{
+    background-color: var(--corBotoesH2Texto);
+    padding: 15px;
+    border-radius: var(--arredondamentoBordas);
+    border: none;
+    width: 150px;
+    cursor: pointer;
 }
