@@ -98,3 +98,46 @@ button
     width: 150px;
     cursor: pointer;
 }
+
+.h2carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btncarrinho {
+    color: black;
+    padding: 0;
+    border-radius: var(--arredondamentoBordas);
+    border: none;
+    width: 22%;
+    cursor: pointer;
+}
+
+.TP {
+    display: flex;
+    color: white;
+    justify-content: end;
+    padding: 0 10px;
+}
+
+.btncards {
+    border-radius: 50px;
+    color: black;
+    padding: 0;
+    border: none;
+    width: 20px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.inputcards {
+    text-align: center;
+    padding-left: 15px;
+    margin: 0 15px;
+}
+
+.imgcard {
+    display: flex;
+    align-items: center;
+
+}
