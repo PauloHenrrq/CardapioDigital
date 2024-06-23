@@ -152,15 +152,19 @@ button
 
 @media(max-width: 800px) {
     .boxProduto {
-        width: 400px;
+        width: 350px;
         padding: 10px 0;
     }
 
     .boxTexto {
-        width: 400px
+        width: 350px
     }
 
     .carrosel {
-        width: 400px;
+        width: 350px;
+    }
+
+    .imagemProduto {
+        width: 350px;
     }
 }
