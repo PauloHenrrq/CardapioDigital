@@ -80,7 +80,7 @@ h2
 
 .boxTexto
 {
-    width: 400px;
+    width: 440px;
     text-align: start;
 }
 
@@ -140,4 +140,27 @@ button
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.carrosel {
+    width: 700px;
+    height: 250px;
+}
+
+.row {
+    background: rgba(180, 177, 157, 0.87);
+}
+
+@media(max-width: 800px) {
+    .boxProduto {
+        width: 400px;
+        padding: 10px 0;
+    }
+
+    .boxTexto {
+        width: 400px
+    }
+
+    .carrosel {
+        width: 400px;
+    }
 }

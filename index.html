@@ -22,9 +22,9 @@
         </nav>
     </header>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="Carrinho" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="Carrinho" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <h2>Meu carrinho</h2>
@@ -102,13 +102,13 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagens/hamburguer1ad.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/hamburguer1ad.jpg" class="carrosel d-block mx-auto" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="imagens/hamburguer2ad.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/hamburguer2ad.jpg" class="carrosel d-block mx-auto" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="imagens/hamburger3ad.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/hamburger3ad.jpg" class="carrosel d-block mx-auto" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -146,8 +146,121 @@
                     <button>
                         Pedir
                     </button>
+                    <button data-bs-toggle="modal" data-bs-target="#modal1">
+                        Detalhes
+                    </button>
+
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                                        <h3 class="text-dark">
+                                            Gourmet Burger - <strong class="text-dark">R$35,00</strong>
+                                        </h3>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark d-grid ">
+                                    <div class="d-flex justify-content-evenly">
+                                        <div class="d-grid">
+                                            <h6 class="text-dark">Ingredientes</h6>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/pao.png" alt="pão" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Pão</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/hamburguer.png" alt="carne de hamburguer"
+                                                    width="32px">
+                                                <p class="mx-2 my-auto text-dark">Hamburguer</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/queijo.png" alt="queijo" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Queijo</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/alface.png" alt="alface" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Alface</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/tomate.png" alt="tomate" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Tomate</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-grid">
+                                            <h6 class="text-dark">Valor</h6>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$5,00</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$3,00</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">1,50</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$5,00</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid justify-content-center w-25">
+                                            <h6 class="text-dark">Ingredientes</h6>
+                                            <input type="number" value="1" disabled
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-dark">SubTotal</h6>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-grid text-center me-5">
+                                                <h6 class="text-dark">Total</h6>
+                                                <p class="text-dark">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="boxProduto">
                 <div class="boxImg">
                     <img src="imagens/burger02.png" alt="Gourmet Burger" class="imagemProduto">
@@ -166,11 +279,11 @@
                     <button>
                         Pedir
                     </button>
-                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button data-bs-toggle="modal" data-bs-target="#modal2">
                         Detalhes
                     </button>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -242,7 +355,7 @@
                                                 class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
                                         </div>
                                         <div>
-                                            <h6 class="text-dark">Total</h6>
+                                            <h6 class="text-dark">SubTotal</h6>
                                             <div>
                                                 <p class="text-dark mx-2">-</p>
                                             </div>
@@ -261,8 +374,13 @@
                                         </div>
 
                                     </div>
-                                    <div class="modal-body text-dark">
-                                        <h6 class="text-dark">Adicionais</h6>
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-grid text-center me-5">
+                                                <h6 class="text-dark">Total</h6>
+                                                <p class="text-dark">-</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -274,26 +392,150 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxProduto">
-                    <div class="boxImg">
-                        <img src="imagens/burger03.png" alt="Defumado BBQ Burger" class="imagemProduto">
-                    </div>
+            </div>
 
-                    <div class="boxTexto">
-                        <h3>
-                            Defumado BBQ Burger - <strong>R$29,00</strong>
-                        </h3>
-
-                        <p>
-                            Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de
-                            hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.
-                        </p>
-
-                        <button>
-                            Pedir
-                        </button>
-                    </div>
+            <div class="boxProduto">
+                <div class="boxImg">
+                    <img src="imagens/burger03.png" alt="Defumado BBQ Burger" class="imagemProduto">
                 </div>
+
+                <div class="boxTexto">
+                    <h3>
+                        Defumado BBQ Burger - <strong>R$29,00</strong>
+                    </h3>
+
+                    <p>
+                        Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de
+                        hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.
+                    </p>
+
+                    <button>
+                        Pedir
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#modal3">
+                        Detalhes
+                    </button>
+
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                                        <h3 class="text-dark">
+                                            Gourmet Burger - <strong class="text-dark">R$35,00</strong>
+                                        </h3>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark d-grid">
+                                    <h6 class="text-dark">Principal</h6>
+                                    <div class="d-flex justify-content-evenly">
+                                        <div class="d-grid">
+                                            <h6 class="text-dark">Ingredientes</h6>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/pao.png" alt="pão" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Pão</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/hamburguer.png" alt="carne de hamburguer"
+                                                    width="32px">
+                                                <p class="mx-2 my-auto text-dark">Hamburguer</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/queijo.png" alt="queijo" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Queijo</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/cebola.png" alt="cebola" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Cebola</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/alface.png" alt="Alface" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Alface</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="imagens/ICONS/tomate.png" alt="Tomate" width="32px">
+                                                <p class="mx-2 my-auto text-dark">Tomate</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-grid">
+                                            <h6 class="text-dark">Valor</h6>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$5,00</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$3,00</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">1,50</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">R$5,00</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2 my-auto">1,50</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid justify-content-center w-25">
+                                            <h6 class="text-dark">Ingredientes</h6>
+                                            <input type="number" value="1" disabled
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                            <input type="number" value="1"
+                                                class="rounded-pill border-2 inputcards w-50 text-dark text-align-center">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-dark">SubTotal</h6>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-dark mx-2">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="d-grid text-center me-5">
+                                                <h6 class="text-dark">Total</h6>
+                                                <p class="text-dark">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
         </section>
 
